@@ -8,7 +8,6 @@ defmodule Tasks3.Tasks.Task do
     field :description, :string
     field :time, :integer
     field :title, :string
-    field :user_id, :id
     belongs_to :user, Tasks3.Users.User
 
     timestamps()
@@ -18,6 +17,6 @@ defmodule Tasks3.Tasks.Task do
   def changeset(task, attrs) do
     task
     |> cast(attrs, [:title, :description, :time, :completed])
-    |> validate_required([:title, :description, :time, :completed])
+    |> validate_required([:title, :description, :time, :completed, :user_id])
   end
 end

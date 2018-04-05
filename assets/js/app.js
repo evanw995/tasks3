@@ -21,4 +21,11 @@ import "phoenix_html"
 // import socket from "./socket"
 
 import tasks3_init from "./cs/tasks3";
-$(tasks3_init);
+import store from './store';
+import api from './api';
+
+$(function() {
+    api.request_tasks();
+    api.request_users();
+    tasks3_init(store);
+});

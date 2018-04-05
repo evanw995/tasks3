@@ -16,7 +16,6 @@ defmodule Tasks3Web.TaskView do
       title: task.title,
       description: task.description,
       time: task.time,
-      completed: task.completed,
-      user: render_one(task.user, UserView, “user.json”)}
+      completed: task.completed}
   end
 end

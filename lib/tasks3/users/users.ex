@@ -21,6 +21,11 @@ defmodule Tasks3.Users do
     Repo.all(User)
   end
 
+  def get_and_auth_user(name) do
+    user = Repo.one(from u in User, where: u.name == ^name)
+    true # Sadface: no passwords currently working. Anyone can log in, it's a free for all!
+  end
+
   @doc """
   Gets a single user.
 

@@ -20,6 +20,8 @@ defmodule Tasks3Web.Router do
     get "/users", PageController, :index
     get "/tasks", PageController, :index
     get "/users/:id", PageController, :index
+
+    post "/token", TokenController, :create
   end
 
   # Other scopes may use custom stacks.

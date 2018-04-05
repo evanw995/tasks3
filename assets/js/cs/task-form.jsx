@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Button, FormGroup, Label, Input } from 'reactstrap';
 import api from '../api';
+// Code source credit: Nat's lecture notes with modifications by Evan Welsh
 
 function TaskForm(params) {
   function update(ev) {

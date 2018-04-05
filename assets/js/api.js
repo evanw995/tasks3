@@ -1,4 +1,5 @@
 import store from './store';
+// Code source credit: Nat's lecture notes with modifications by Evan Welsh
 
 class TheServer {
   request_tasks() {

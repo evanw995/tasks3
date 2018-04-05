@@ -7,6 +7,7 @@ import Nav from './nav';
 import Feed from './feed';
 import Users from './users';
 import TaskForm from './task-form';
+// Code source credit: Nat's lecture notes with modifications by Evan Welsh
 
 export default function tasks3_init(store) {
     ReactDOM.render(

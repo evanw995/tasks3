@@ -1,12 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { NavItem } from 'reactstrap';
+// Code source credit: Nat's lecture notes with modifications by Evan Welsh
 
 export default function Nav(props) {
   return (
     <nav className="navbar navbar-dark bg-dark navbar-expand">
       <span className="navbar-brand">
-        Î¼Blog
+        Task Manager
       </span>
       <ul className="navbar-nav mr-auto">
         <NavItem>
